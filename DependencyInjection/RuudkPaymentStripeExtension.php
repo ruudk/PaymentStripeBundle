@@ -32,7 +32,6 @@ class RuudkPaymentStripeExtension extends Extension
          * When logging is disabled, remove logger and setLogger calls
          */
         if(false === $config['logger']) {
-            $container->getDefinition('ruudk_payment_stripe.controller.notification')->removeMethodCall('setLogger');
             $container->getDefinition('ruudk_payment_stripe.plugin.credit_card')->removeMethodCall('setLogger');
             $container->removeDefinition('monolog.logger.ruudk_payment_stripe');
         }
