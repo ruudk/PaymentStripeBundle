@@ -4,7 +4,7 @@
     "description": "A Symfony2 Bundle that provides access to the Stripe API. Based on JMSPaymentCoreBundle.",
     "keywords": ["payment", "stripe"],
     "homepage": "https://github.com/ruudk/PaymentStripeBundle",
-    "license": "Apache2",
+    "license": "MIT",
     "authors": [
         {
             "name": "Ruud Kamphuis",
