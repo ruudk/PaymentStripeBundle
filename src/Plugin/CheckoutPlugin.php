@@ -8,6 +8,7 @@ use JMS\Payment\CoreBundle\Plugin\Exception\FinancialException;
 use JMS\Payment\CoreBundle\Plugin\PluginInterface;
 use Omnipay\Stripe\Gateway;
 use Psr\Log\LoggerInterface;
+use Ruudk\Payment\StripeBundle\Form\CheckoutType;
 
 class CheckoutPlugin extends AbstractPlugin
 {
@@ -36,7 +37,7 @@ class CheckoutPlugin extends AbstractPlugin
 
     public function processes($name)
     {
-        return $name == 'stripe_checkout';
+        return $name === CheckoutType::class;
     }
 
     public function approveAndDeposit(FinancialTransactionInterface $transaction, $retry)
