@@ -8,6 +8,7 @@ A Symfony2 Bundle that provides access to the Stripe API. Based on JMSPaymentCor
 ### Step1: Require the package with Composer
 
 ````
+php composer.phar require symfony/event-dispatcher:^2.8
 php composer.phar require ruudk/payment-stripe-bundle
 ````
 
