@@ -3,6 +3,7 @@
 namespace Ruudk\Payment\StripeBundle\Form;
 
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 
 class CheckoutType extends StripeType
 {
