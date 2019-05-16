@@ -1,4 +1,4 @@
-RuudkPaymentStripeBundle
+NO LONGER MAINTAINED
 ========================
 
 A Symfony2 Bundle that provides access to the Stripe API. Based on JMSPaymentCoreBundle.
